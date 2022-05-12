@@ -1,4 +1,3 @@
-import ProgressBar from "react-bootstrap/ProgressBar";
 import styled from "styled-components";
 
 const Wrapper = styled.li`
@@ -20,7 +19,7 @@ const Wrapper = styled.li`
 
 const CardImage = styled.img`
     display: block;
-    height: 120px;
+    height: 130px;
     margin-bottom: 5px;
     object-position: center;
     box-shadow: var(--shadow);
@@ -43,33 +42,14 @@ const CardTitle = styled.h3`
     text-align: center;
     margin-bottom: 10px;
 `;
-const ContainerProgress = styled.div`
-    padding: 0rem 0.5rem 1.5rem;
-    width: 110px;
-`;
 
-const CardTools = ({ img, name, progress }) => {
+const CardTools = ({ img, name }) => {
     return (
         <Wrapper>
             <CardImage src={img} alt={name} />
             <CardBody>
                 <CardTitle>{name}</CardTitle>
             </CardBody>
-            <ContainerProgress>
-                <ProgressBar>
-                    <ProgressBar
-                        key={1}
-                        variant="secondary text-light"
-                        now={progress}
-                        label={`${progress} %`}
-                    />
-                    <ProgressBar
-                        key={2}
-                        variant="warning"
-                        now={100 - progress}
-                    />
-                </ProgressBar>
-            </ContainerProgress>
         </Wrapper>
     );
 };

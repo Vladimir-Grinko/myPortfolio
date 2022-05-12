@@ -48,7 +48,6 @@ export const TechnologiesList = () => {
                             key={tehnologie.id}
                             img={tehnologie.image}
                             name={tehnologie.name}
-                            progress={tehnologie.progress}
                         />
                     ))}
                 </ListTools>

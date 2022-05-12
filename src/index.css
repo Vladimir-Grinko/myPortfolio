@@ -2,10 +2,6 @@
 
 * {
     box-sizing: border-box;
-    background-image: image-set(
-        url(./images/forTheme/background-light.jpg),
-        url(./images/forTheme/background-dark.jpg)
-    );
 }
 
 :root {
@@ -21,7 +17,7 @@
     --radii: 0.5rem;
 }
 
-body[data-theme="dark"] {
+body[data-theme="Dark"] {
     --image-bg: url(./images/forTheme/background-dark.jpg);
     --colors-text: hsl(0, 0%, 100%);
     --colors-bg: hsl(207, 26%, 17%);
@@ -29,7 +25,7 @@ body[data-theme="dark"] {
 
     --shadow: rgba(245, 245, 245, 0.2) 0 0 8px;
 }
-body[data-theme="light"] {
+body[data-theme="Light"] {
     --image-bg: url(./images/forTheme/background-light.jpg);
     --colors-text: rgb(0, 0, 0);
     --colors-bg: hsl(0, 0%, 98%);
@@ -49,6 +45,5 @@ body {
 }
 
 .carousel {
-    width: 1150px;
+    width: 1000px;
 }
-

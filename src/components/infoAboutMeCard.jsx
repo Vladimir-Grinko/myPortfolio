@@ -6,6 +6,7 @@ const InfoAboutMe = ({ person }) => {
 
     const onClose = () => setShow(false);
     const onShow = () => setShow(true);
+
     return (
         <div
             className="card mb-2"
@@ -21,12 +22,10 @@ const InfoAboutMe = ({ person }) => {
                 image={person.diplom}
             />{" "}
             <div className="card-body ">
-                <p>
-                    <u>
-                        <h6>Обо мне: </h6>
-                    </u>
-                    {person.info}
-                </p>
+                <u>
+                    <h6>Обо мне: </h6>
+                </u>
+                <p>{person.info}</p>
                 <hr />
                 <i>
                     <u>
@@ -48,7 +47,9 @@ const InfoAboutMe = ({ person }) => {
                         <div className="col">
                             <img
                                 onClick={onShow}
-                                style={{ cursor: "pointer" }}
+                                style={{
+                                    cursor: "pointer"
+                                }}
                                 className="rounded"
                                 src={person.diplom}
                                 alt="diplom"
