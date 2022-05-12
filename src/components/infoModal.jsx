@@ -4,7 +4,6 @@ import { Modal, Container, Row, Badge } from "react-bootstrap";
 const InfoModal = ({ show, onClose, project }) => {
     const changeProject = myProjects.find((p) => p.id === project);
 
-    console.log(changeProject);
     return (
         changeProject && (
             <Modal
