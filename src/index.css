@@ -17,7 +17,7 @@
     --radii: 0.5rem;
 }
 
-body[data-theme="Dark"] {
+body[data-theme="dark"] {
     --image-bg: url(./images/forTheme/background-dark.jpg);
     --colors-text: hsl(0, 0%, 100%);
     --colors-bg: hsl(207, 26%, 17%);
@@ -25,7 +25,7 @@ body[data-theme="Dark"] {
 
     --shadow: rgba(245, 245, 245, 0.2) 0 0 8px;
 }
-body[data-theme="Light"] {
+body[data-theme="light"] {
     --image-bg: url(./images/forTheme/background-light.jpg);
     --colors-text: rgb(0, 0, 0);
     --colors-bg: hsl(0, 0%, 98%);

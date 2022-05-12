@@ -45,17 +45,16 @@ const ModeSwitcher = styled.div`
     color: var(--colors-text);
     font-size: var(--fs-sm);
     cursor: pointer;
-    text-transform: capitalize;
     animation: ${animation};
     animation-duration: 2s;
 `;
 
 const Header = ({ onShow }) => {
     const [theme, setTheme] = useState(
-        localStorage.getItem("data-theme") || "Light"
+        localStorage.getItem("data-theme") || "light"
     );
 
-    const toggleTheme = () => setTheme(theme === "Light" ? "Dark" : "Light");
+    const toggleTheme = () => setTheme(theme === "light" ? "dark" : "light");
 
     useEffect(() => {
         document.body.setAttribute("data-theme", theme);
@@ -82,7 +81,7 @@ const Header = ({ onShow }) => {
 
                     <ModeSwitcher onClick={toggleTheme}>
                         <Button variant="warning">
-                            {theme === "Light" ? (
+                            {theme === "light" ? (
                                 <IoMoonOutline size="18px" />
                             ) : (
                                 <IoMoon size="18px" />
@@ -90,7 +89,8 @@ const Header = ({ onShow }) => {
                             <span
                                 style={{
                                     marginLeft: "0.5rem",
-                                    fontSize: "var(--fs-sm)"
+                                    fontSize: "var(--fs-sm)",
+                                    textTransform: "capitalize"
                                 }}
                             >
                                 {theme} Theme
