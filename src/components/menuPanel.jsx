@@ -22,11 +22,17 @@ const OffcanvasStyled = styled(Offcanvas)`
     height: 550px;
     margin-top: 85px;
 `;
+
 const MenuSwitcher = styled.div`
     font-weight: var(--fw-bold);
     font-size: var(--fs-md);
     cursor: pointer;
     text-transform: capitalize;
+    transition: 0.2s;
+
+    :hover {
+        transform: scale(1.1);
+    }
 `;
 
 const MenuPanel = ({ show, onClose, switchShow }) => {
@@ -51,7 +57,10 @@ const MenuPanel = ({ show, onClose, switchShow }) => {
                                 })
                             }
                         >
-                            <IoPersonSharp size="16px" />
+                            <IoPersonSharp
+                                size="16px"
+                                className="beauty-rotate"
+                            />
                             <span style={{ marginLeft: "0.75rem" }}>
                                 Обо мне
                             </span>
@@ -67,7 +76,10 @@ const MenuPanel = ({ show, onClose, switchShow }) => {
                                 })
                             }
                         >
-                            <IoConstruct size="16px" />
+                            <IoConstruct
+                                size="16px"
+                                className="beauty-rotate"
+                            />
                             <span style={{ marginLeft: "0.75rem" }}>
                                 Мои Навыки
                             </span>
@@ -83,7 +95,7 @@ const MenuPanel = ({ show, onClose, switchShow }) => {
                                 })
                             }
                         >
-                            <IoImages size="16px" />
+                            <IoImages size="16px" className="beauty-rotate" />
                             <span style={{ marginLeft: "0.75rem" }}>
                                 Мои Проекты
                             </span>

@@ -1,11 +1,27 @@
 import React, { useState } from "react";
+import styled from "styled-components";
 import ModalCertificate from "./modalCertificate";
+import ModalEndCertificate from "./modalEndCertificate";
+
+const ImageDiv = styled.div`
+    margin: 3px;
+    cursor: pointer;
+    transition: 0.2s;
+
+    :hover {
+        transform: scale(1.1);
+    }
+`;
 
 const InfoAboutMe = ({ person }) => {
-    const [show, setShow] = useState(false);
+    const [showModal, setShowModal] = useState(false);
+    const [showEndModal, setShowEndModal] = useState(false);
 
-    const onClose = () => setShow(false);
-    const onShow = () => setShow(true);
+    const onCloseModal = () => setShowModal(false);
+    const onShowModal = () => setShowModal(true);
+
+    const onCloseEndModal = () => setShowEndModal(false);
+    const onShowEndModal = () => setShowEndModal(true);
 
     return (
         <div
@@ -17,9 +33,14 @@ const InfoAboutMe = ({ person }) => {
             }}
         >
             <ModalCertificate
-                show={show}
-                onClose={onClose}
+                show={showModal}
+                onClose={onCloseModal}
                 image={person.diplom}
+            />{" "}
+            <ModalEndCertificate
+                show={showEndModal}
+                onClose={onCloseEndModal}
+                image={person.myCertificate}
             />{" "}
             <div className="card-body ">
                 <u>
@@ -44,18 +65,27 @@ const InfoAboutMe = ({ person }) => {
                                 <li>Курсы: {person.courses}</li>
                             </ul>
                         </div>
-                        <div className="col">
-                            <img
-                                onClick={onShow}
-                                style={{
-                                    cursor: "pointer"
-                                }}
-                                className="rounded"
-                                src={person.diplom}
-                                alt="diplom"
-                                height="145px"
-                                title="Посмотреть"
-                            />
+                        <div className="col d-flex justify-content-center">
+                            <ImageDiv>
+                                <img
+                                    onClick={onShowModal}
+                                    className="rounded"
+                                    src={person.diplom}
+                                    alt="diplom"
+                                    height="145px"
+                                    title="Посмотреть"
+                                />
+                            </ImageDiv>
+                            <ImageDiv>
+                                <img
+                                    onClick={onShowEndModal}
+                                    className="rounded"
+                                    src={person.myCertificate}
+                                    alt="certificate"
+                                    height="145px"
+                                    title="Посмотреть"
+                                />
+                            </ImageDiv>
                         </div>
                     </div>
                 </div>

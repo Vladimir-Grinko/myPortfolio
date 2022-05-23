@@ -1,5 +1,6 @@
 import myPhoto from "../images/access/myPhoto.jpg";
 import course from "../images/access/course.jpg";
+import certificate from "../images/access/certificate.jpg";
 
 export const person = {
     name: "Владимир Гринько",
@@ -13,5 +14,6 @@ export const person = {
     languages: "Английский А2, Немецкий А2",
     courses: "SoloLearn, Result School",
     diplom: course,
+    myCertificate: certificate,
     team: "Командный игрок - считаю, что поистине мощное и большое приложение один человек не сможет сделать, а вот команда разработчиков способна на многое. И, в принципе, всегда считал, что хороший сервис – это всегда про команду, а не про одного человека."
 };

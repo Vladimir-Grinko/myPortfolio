@@ -17,6 +17,14 @@
     --radii: 0.5rem;
 }
 
+#preloadedImages {
+    width: 0px;
+    height: 0px;
+    display: inline;
+    background-image: url(./images/forTheme/background-dark.jpg);
+    background-image: url(./images/forTheme/background-light.jpg);
+}
+
 body[data-theme="dark"] {
     --image-bg: url(./images/forTheme/background-dark.jpg);
     --colors-text: hsl(0, 0%, 100%);
@@ -41,9 +49,17 @@ body {
     font-weight: var(--fw-light);
     background-color: var(--colors-bg);
     background-image: var(--image-bg);
-    transition: all 0.5s linear;
+    transition: all 1s linear;
 }
 
 .carousel {
     width: 1000px;
+}
+
+.beauty-rotate {
+    transition: all 1s ease;
+}
+
+.beauty-rotate:hover {
+    transform: rotate(360deg);
 }

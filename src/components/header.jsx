@@ -39,6 +39,12 @@ const MenuSwitcher = styled.div`
     text-transform: capitalize;
     animation: ${animation};
     animation-duration: 2s;
+
+    transition: 0.6s;
+
+    :hover {
+        transform: scale(1.025);
+    }
 `;
 
 const ModeSwitcher = styled.div`
@@ -47,6 +53,12 @@ const ModeSwitcher = styled.div`
     cursor: pointer;
     animation: ${animation};
     animation-duration: 2s;
+
+    transition: 0.6s;
+
+    :hover {
+        transform: scale(1.025);
+    }
 `;
 
 const Header = ({ onShow }) => {
@@ -67,7 +79,7 @@ const Header = ({ onShow }) => {
                 <Wrapper>
                     <MenuSwitcher onClick={onShow}>
                         <Button variant="warning">
-                            <IoMenu size="21px" />
+                            <IoMenu size="21px" className="beauty-rotate" />
                             <span
                                 style={{
                                     marginLeft: "0.5rem",
@@ -82,9 +94,12 @@ const Header = ({ onShow }) => {
                     <ModeSwitcher onClick={toggleTheme}>
                         <Button variant="warning">
                             {theme === "light" ? (
-                                <IoMoonOutline size="18px" />
+                                <IoMoonOutline
+                                    size="18px"
+                                    className="beauty-rotate"
+                                />
                             ) : (
-                                <IoMoon size="18px" />
+                                <IoMoon size="18px" className="beauty-rotate" />
                             )}{" "}
                             <span
                                 style={{

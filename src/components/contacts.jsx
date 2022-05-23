@@ -33,17 +33,26 @@ const Contacts = () => {
         <ContactsList>
             <ContactCard>
                 <a href="https://github.com/Vladimir-Grinko" title="GitHub">
-                    <ContactImage src={gitHub} alt="Иконка сервиса GitHub" />
+                    <ContactImage
+                        className="beauty-rotate"
+                        src={gitHub}
+                        alt="Иконка сервиса GitHub"
+                    />
                 </a>
             </ContactCard>
             <ContactCard>
                 <a href="https://vk.com/steel_afterman" title="Вконтакте">
-                    <ContactImage src={vk} alt="Иконка сервиса VK" />
+                    <ContactImage
+                        className="beauty-rotate"
+                        src={vk}
+                        alt="Иконка сервиса VK"
+                    />
                 </a>
             </ContactCard>
             <ContactCard>
                 <a href="https://t.me/grinko_vladimir" title="Telegram">
                     <ContactImage
+                        className="beauty-rotate"
                         src={telegram}
                         alt="Иконка сервиса Telegram"
                     />
@@ -54,12 +63,20 @@ const Contacts = () => {
                     href="https://instagram.com/vovan_officiall"
                     title="Instagram"
                 >
-                    <ContactImage src={inst} alt="Иконка сервиса Instagram" />
+                    <ContactImage
+                        className="beauty-rotate"
+                        src={inst}
+                        alt="Иконка сервиса Instagram"
+                    />
                 </a>
             </ContactCard>
             <ContactCard>
                 <a href="mailto:vladimir.grinko055@gmail.com" title="Email">
-                    <ContactImage src={email} alt="Иконка сервиса Email" />
+                    <ContactImage
+                        className="beauty-rotate"
+                        src={email}
+                        alt="Иконка сервиса Email"
+                    />
                 </a>
             </ContactCard>
         </ContactsList>

@@ -15,6 +15,12 @@ const Wrapper = styled.li`
     -ms-flex-align: center;
     align-items: center;
     margin: 15px;
+
+    transition: 0.6s;
+
+    :hover {
+        transform: scale(1.12);
+    }
 `;
 
 const CardImage = styled.img`
