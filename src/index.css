@@ -17,14 +17,6 @@
     --radii: 0.5rem;
 }
 
-#preloadedImages {
-    width: 0px;
-    height: 0px;
-    display: inline;
-    background-image: url(./images/forTheme/background-dark.jpg);
-    background-image: url(./images/forTheme/background-light.jpg);
-}
-
 body[data-theme="dark"] {
     --image-bg: url(./images/forTheme/background-dark.jpg);
     --colors-text: hsl(0, 0%, 100%);
@@ -49,6 +41,7 @@ body {
     font-weight: var(--fw-light);
     background-color: var(--colors-bg);
     background-image: var(--image-bg);
+    background-size: cover;
     transition: all 1s linear;
 }
 
@@ -58,8 +51,25 @@ body {
 
 .beauty-rotate {
     transition: all 1s ease;
+    animation: effect 4s infinite linear;
 }
 
 .beauty-rotate:hover {
     transform: rotate(360deg);
+}
+
+@keyframes effect {
+    0%,
+    100% {
+        color: deeppink;
+    }
+    25% {
+        color: deepskyblue;
+    }
+    50% {
+        color: lawngreen;
+    }
+    75% {
+        color: yellow;
+    }
 }

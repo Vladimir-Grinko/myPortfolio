@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { IoPersonSharp } from "react-icons/io5";
 import { person } from "../API/myInfo";
-import { Container } from "./container";
 import InfoAboutMe from "./infoAboutMeCard";
 import PersonCard from "./personCard";
 
@@ -19,9 +18,9 @@ const Title = styled.div`
 
 const AboutMe = () => {
     return (
-        <Container>
+        <>
             <Title>
-                <IoPersonSharp size="25px" />
+                <IoPersonSharp size="25px" className="beauty-rotate" />
                 <span style={{ marginLeft: "0.75rem" }}>Обо мне</span>
             </Title>
             <div className="row gutters-sm">
@@ -33,7 +32,7 @@ const AboutMe = () => {
                     <InfoAboutMe person={person} />
                 </div>
             </div>
-        </Container>
+        </>
     );
 };
 

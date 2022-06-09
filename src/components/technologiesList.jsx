@@ -38,7 +38,7 @@ export const TechnologiesList = () => {
     return (
         <Wrapper>
             <Title>
-                <IoConstruct size="25px" />
+                <IoConstruct size="25px" className="beauty-rotate" />
                 <span style={{ marginLeft: "0.75rem" }}>Hard Skills</span>
             </Title>
             <ContainerTools>

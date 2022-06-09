@@ -10,7 +10,6 @@ function App() {
 
     return (
         <>
-            <div id="preloadedImages"></div>
             <Header onShow={handleShow} />
             <Main show={show} onClose={handleClose}></Main>
         </>

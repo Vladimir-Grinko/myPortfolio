@@ -45,7 +45,7 @@ const Projects = () => {
     return (
         <Section>
             <Title>
-                <IoImages size="25px" />
+                <IoImages size="25px" className="beauty-rotate" />
                 <span style={{ marginLeft: "0.75rem" }}>Мои проекты</span>
             </Title>
             <Wrapper>

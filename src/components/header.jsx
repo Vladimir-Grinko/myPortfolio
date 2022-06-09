@@ -79,7 +79,7 @@ const Header = ({ onShow }) => {
                 <Wrapper>
                     <MenuSwitcher onClick={onShow}>
                         <Button variant="warning">
-                            <IoMenu size="21px" className="beauty-rotate" />
+                            <IoMenu size="21px" />
                             <span
                                 style={{
                                     marginLeft: "0.5rem",
@@ -96,10 +96,9 @@ const Header = ({ onShow }) => {
                             {theme === "light" ? (
                                 <IoMoonOutline
                                     size="18px"
-                                    className="beauty-rotate"
                                 />
                             ) : (
-                                <IoMoon size="18px" className="beauty-rotate" />
+                                <IoMoon size="18px" />
                             )}{" "}
                             <span
                                 style={{
