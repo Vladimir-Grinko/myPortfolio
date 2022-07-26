@@ -10,6 +10,7 @@ import webpackSvg from "../images/technologies/webpack.svg";
 import vscodeSvg from "../images/technologies/vscode.svg";
 import mongodbSvg from "../images/technologies/mongodb.svg";
 import dockerSvg from "../images/technologies/docker.svg";
+import vueSvg from "../images/technologies/vue-logo.svg";
 
 export const technologies = [
     {
@@ -47,6 +48,12 @@ export const technologies = [
         name: "CSS",
         image: cssSvg,
         progress: 57
+    },
+    {
+        id: 61,
+        name: "Vue.js",
+        image: vueSvg,
+        progress: 25
     },
     {
         id: 7,

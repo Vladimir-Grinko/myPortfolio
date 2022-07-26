@@ -17,7 +17,7 @@ const PersonCard = ({ person }) => {
                     />
                     <div className="mt-3">
                         <h4>{person.name}</h4>
-                        <h5 className="text-secondary mb-1">
+                        <h5 className="mb-1" style={{ color: "#2e6a85" }}>
                             {person.profession}
                         </h5>
                         <div className="text-muted">

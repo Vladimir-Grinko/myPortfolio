@@ -5,13 +5,30 @@ import onlineStore from "../images/access/online-store.png";
 import traveling from "../images/access/traveling.png";
 import mern from "../images/access/mern.png";
 import jsHtml from "../images/access/js_html_css.jpg";
+import currencyConverter from "../images/access/currency-converter.png";
+import vue from "../images/access/vue.png";
 import vAimTraning from "../video/aim-traning.mp4";
 import vFastCompany from "../video/fast-company.mp4";
 import vSlider from "../video/slider.mp4";
 import vItalianTaste from "../video/italian-taste.mp4";
 import vOnlineStore from "../video/online-store.mp4";
+import vCurrencyConverter from "../video/currency-converter.mp4";
 
 export const myProjects = [
+    {
+        id: 11,
+        name: "Конвертер валют",
+        libraries: "Vue.js, Vuex",
+        image: currencyConverter,
+        icon: vue,
+        video: vCurrencyConverter,
+        code: "https://vladimir-grinko.github.io/currency-converter/",
+        helpTools: "API курсов валют Центрального Банка России",
+        info: "Конвертер валют с определением местоположения",
+        styles: "MDBootstrap, CSS",
+        description:
+            "Я разрботал адаптивное приложение `Конвертер валют` на Vue.js с Vuex, который определяет местоположение пользователя и выставляет по умолчанию валюту в данном регионе для конвертации. Курсы валют были взяты с открытого API Центрального Банка России. Еще одно преимущество - конвертация на лету, т.е. при вводе суммы валюты, изменении конвертируемой валюты или изменении валюты, в которую производим конвертацию, получаем результат."
+    },
     {
         id: 1,
         name: "Fast Company",
@@ -70,7 +87,7 @@ export const myProjects = [
     },
     {
         id: 5,
-        name: "Aim Trening",
+        name: "Aim Training",
         libraries: "Чистый JavaScript, HTML",
         image: aimTraning,
         icon: jsHtml,
