@@ -53,7 +53,7 @@ export const technologies = [
         id: 61,
         name: "Vue.js",
         image: vueSvg,
-        progress: 25
+        progress: 38
     },
     {
         id: 7,

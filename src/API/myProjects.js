@@ -1,4 +1,5 @@
 import aimTraning from "../images/access/aimTraning.jpeg";
+import ecoSafety from "../images/access/eco-safety.png";
 import friends from "../images/access/friends.jpg";
 import kitchen from "../images/access/kitchen.jpg";
 import onlineStore from "../images/access/online-store.png";
@@ -13,8 +14,23 @@ import vSlider from "../video/slider.mp4";
 import vItalianTaste from "../video/italian-taste.mp4";
 import vOnlineStore from "../video/online-store.mp4";
 import vCurrencyConverter from "../video/currency-converter.mp4";
+import vEcoSafety from "../video/eco-safety.mp4";
 
 export const myProjects = [
+    {
+        id: 101,
+        name: "Личный кабинет медицинской огранизации",
+        libraries: "Vue.js, Vuex, FingerprintJS",
+        image: ecoSafety,
+        icon: vue,
+        video: vEcoSafety,
+        code: "https://vladimir-grinko.github.io/eco-safety/",
+        helpTools: "Работающий сервис Личного кабинета для клиентов по адресу https://ecohospital.ru",
+        info: "Личный кабинет для клиентов  медицинской огранизации",
+        styles: "MDBootstrap, CSS, WOW.js, Animate.css",
+        description:
+            "Мною был разработан адаптивный Личный кабинет для клиентов  медицинской огранизации на Vue.js с Vuex, который при имеющихся логине и пароле, после успешной авторизации, выдает список справок и документов, доступных к просмотру и скачиванию."
+    },
     {
         id: 11,
         name: "Конвертер валют",
